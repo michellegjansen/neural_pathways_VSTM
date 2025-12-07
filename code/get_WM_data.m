@@ -2,10 +2,10 @@
 
 clear all; clc
 
-cd('/Volumes/STD-Donders-DCC-Geerligs/')
+cd('/YourPath')
 
 %directory where the results will be saved
-savedir= '/Volumes/STD-Donders-DCC-Geerligs/Michelle/VSTM/Extracted_data/';
+savedir= '/YourPath/Extracted_data/';
 
 %load the behavioral data 
 subdata= load([savedir 'subject_info.mat']);
@@ -14,8 +14,8 @@ subdata= load([savedir 'subject_info.mat']);
 load([savedir 'extracted_data.mat'], 'insub')
 
 %location of the data
-WMdir='/Volumes/STD-Donders-DCC-Geerligs/Cambridge_data/MRI_data/cc700/mri/pipeline/release004/data_DWI_DKI_JHU_ICBM/aamod_diffusion_roi_extract_dki_00002/';
-statdir='/Volumes/STD-Donders-DCC-Geerligs/Cambridge_data/MRI_data/cc700/mri/pipeline/release004/aamod_structuralstats_00001/';
+WMdir='/YourPath/WMdir/';
+statdir='/YourPath/statdir';
 
 %collect the WM and TIV data for all participants
 clear TIV WMdata1

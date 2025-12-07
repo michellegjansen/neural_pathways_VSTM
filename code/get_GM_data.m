@@ -3,17 +3,17 @@
 clear all; clc
 
 %directory where the results will be saved
-savedir = '/Volumes/STD-Donders-DCC-Geerligs/Michelle/VSTM/Extracted_data/'
+savedir = '/YourPath/Extracted_data/'
 
 %load the behavioral data 
 subdata= load([savedir 'subject_info.mat']);
 
 %location of the data
-GMdir = '/Volumes/STD-Donders-DCC-Geerligs/Cambridge_data/MRI_data/cc280/mri/pipeline/release003/Structural/aamod_dartel_normmni_00001/';
-ICVdir='/Volumes/STD-Donders-DCC-Geerligs/MRI_data/cc280/mri/pipeline/release003/Structural/aamod_structuralstats_00001/';
+GMdir = '/YourPath/GMdir/';
+ICVdir='/YourPath/ICVdir';
 
 %file for brain parcellation
-roifile='/Volumes/Wrkgrp/STD-Donders-DCC-Geerligs/Michelle/VSTM/Craddock_ROIs_JNpaper_reordered.nii';
+roifile='/YourPath/Craddock_ROIs_JNpaper_reordered.nii';
 
 %load module labels for data averaging
 load([savedir 'module_data.mat'], 'final_community')
